@@ -1,0 +1,40 @@
+<!-- Angular Javascript Tic Tac Toe -->	
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angular Javascript Tic Tac Toe</title>
+		<meta charset='utf-8'>
+    	<link rel='stylesheet' type='text/css' href='style.css'>	
+    	<script src='angular.min.js'></script>
+    	<script src='main.js'></script>
+	</head>
+	<body x-ng-app='TTTApp' x-ng-controller='TTTController'>
+		<div class='outer'>
+			<h2>Angular Javascript Tic Tac Toe</h2>
+			<br/>
+			<div class='inner'>
+				<div class='cell' 
+				x-ng-repeat='singleCell in board track by $index'
+				x-ng-style='{"padding": sideLength,"margin": spacing}'
+				x-ng-class='{clearFix: checkRow() == 0, 
+				 			xclass: singleCell == -1, 
+				 			oclass: singleCell == 1}'
+				x-ng-click='selectBox()'>
+					{{singleCell;}}
+				</div>
+				<p>by Brian Cotrell</p>
+			</div>
+			<div class='lower'>
+				<p>{{winText}}</p>				
+				<p>Dimensions</p>
+				<input x-ng-model='columns'/>
+				<input x-ng-model='boardRows'/>
+				<p>X Win Count</p>
+				<p>{{winCountX}}</p>
+				<p>O Win Count</p>
+				<p>{{winCountO}}</p>
+				<button x-ng-click='setBoard()'>Reset</button>
+			</div>	
+		</div>
+	</body>
+</html>

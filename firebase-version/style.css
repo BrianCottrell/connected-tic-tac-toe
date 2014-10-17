@@ -1,0 +1,34 @@
+/* Angular Javascript Tic Tac Toe */
+input{
+	width: 10%;
+}
+p{
+	display: inline;
+}
+.outer{
+	width:30%;
+	margin-left: 35%;
+	float: left;
+	text-align: center;
+}
+.inner{
+	background-color: #662222;
+}
+.lower{
+
+}
+.cell{				/*Styles each individual box on the board*/
+	width: 0px;
+	height: 0px;
+	float: left;
+	background-color: #008888;
+}
+.clearFix {			/*Puts element on a new line*/ 
+	clear:both;
+}
+.xclass{			/*Added when player x selects a box*/
+	background-color: blue;
+}
+.oclass{			/*Added when player o selects a box*/
+	background-color: yellow;
+}
