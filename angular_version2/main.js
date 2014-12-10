@@ -1,4 +1,7 @@
 /* Angular Javascript Tic Tac Toe */
+/* by Brian Cottrell              */
+/* 10-14-2014                     */
+
 var app = angular.module('TTTApp', []);			//Create an angular javascript module
 app.controller('TTTController', ["$scope", function($scope){//Add an angular javascript controller
 /*Variables*/

@@ -1,5 +1,9 @@
 /* Angular Javascript Tic Tac Toe */
-var app = angular.module('TTTApp', ["firebase"]);			//Create an angular javascript module
+/* by Brian Cottrell              */
+/* 10-16-2014                     */
+
+//Create an angular javascript module
+var app = angular.module('TTTApp', ["firebase"]);
 //Add an angular javascript controller and include firebase
 app.controller('TTTController', function($scope,$firebase){
 /*Variables*/

@@ -1,4 +1,7 @@
 /* Angular Javascript Tic Tac Toe */
+/* by Brian Cottrell              */
+/* 10-09-2014                     */
+
 var app = angular.module('TTTApp', []);			//Create an angular javascript module
 app.controller('TTTController', ["$scope", function($scope){//Add an angular javascript controller
 /*Variables*/	
@@ -71,7 +74,7 @@ app.controller('TTTController', ["$scope", function($scope){//Add an angular jav
 				}
 				$scope.winCheck = 0;								//Reset win check
 			}
-/*			//Checks for a win condition across a forward diagonals
+			//Checks for a win condition across a forward diagonals
 			for(var i = 0; i < $scope.boardRows; i++){
 				for(var j = i; j < $scope.columns*$scope.boardRows; j+=(1*$scope.columns)+1){
 					if($scope.board[j]){
@@ -101,7 +104,7 @@ app.controller('TTTController', ["$scope", function($scope){//Add an angular jav
 				}
 				$scope.winCheck = 0;								//Reset win check
 			}
-*/			if($scope.winText == $scope.xWinMessage){				//If player X has won
+			if($scope.winText == $scope.xWinMessage){				//If player X has won
 				$scope.gameEnd = true;								//End the game
 				$scope.winCountX++;									//Increment X win counter
 			}else if($scope.winText == $scope.oWinMessage){			//If player O has won

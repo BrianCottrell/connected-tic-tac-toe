@@ -1,3 +1,7 @@
+/* Tic Tac Toe       */
+/* by Brian Cottrell */
+/* 10-02-2014        */
+
 //Defined Variables
 var turn = 0;									//Keeps track of whose turn it is
 var originalColor = "";							//Stores original color
