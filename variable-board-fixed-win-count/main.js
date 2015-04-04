@@ -5,7 +5,7 @@
 var app = angular.module('TTTApp', []);			//Create an angular javascript module
 app.controller('TTTController', ["$scope", function($scope){//Add an angular javascript controller
 /*Variables*/
-	$scope.winTarget = 5;
+	$scope.winTarget = 4;						//Number of boxes in a row needed to win
 	$scope.boardRows = 7;						//Number of rows on game board
 	$scope.columns = 9;							//Number of columns on game board
 	$scope.switchRows = 0;						//Stores row count when switching rows and columns
